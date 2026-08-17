@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LazyMarketer — Smart marketing for businesses that want to move</title>
+<style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.bottom-8{bottom:2rem}.left-0{left:0}.right-0{right:0}.right-8{right:2rem}.top-0{top:0}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-14{margin-bottom:3.5rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-6{margin-top:1.5rem}.mt-9{margin-top:2.25rem}.block{display:block}.inline-block{display:inline-block}.inline{display:inline}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-7{height:1.75rem}.h-9{height:2.25rem}.h-full{height:100%}.h-px{height:1px}.w-10{width:2.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-7{width:1.75rem}.w-9{width:2.25rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.grow{flex-grow:1}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-10{gap:2.5rem}.gap-14{gap:3.5rem}.gap-16{gap:4rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.rounded{border-radius:.25rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.p-10{padding:2.5rem}.p-2{padding:.5rem}.p-8{padding:2rem}.p-9{padding:2.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-28{padding-top:7rem;padding-bottom:7rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.pb-10{padding-bottom:2.5rem}.pb-16{padding-bottom:4rem}.pt-20{padding-top:5rem}.pt-40{padding-top:10rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.uppercase{text-transform:uppercase}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.outline{outline-style:solid}.blur{--tw-blur:blur(8px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media (min-width:640px){.sm\:col-span-2{grid-column:span 2/span 2}.sm\:inline-flex{display:inline-flex}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}}@media (min-width:768px){.md\:block{display:block}.md\:flex{display:flex}.md\:inline-flex{display:inline-flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.md\:flex-row{flex-direction:row}.md\:flex-col{flex-direction:column}.md\:items-end{align-items:flex-end}.md\:items-center{align-items:center}.md\:justify-between{justify-content:space-between}.md\:p-10{padding:2.5rem}.md\:py-36{padding-top:9rem;padding-bottom:9rem}.md\:pb-20{padding-bottom:5rem}.md\:pt-48{padding-top:12rem}}@media (min-width:1024px){.lg\:col-span-2{grid-column:span 2/span 2}.lg\:col-span-3{grid-column:span 3/span 3}.lg\:col-span-4{grid-column:span 4/span 4}.lg\:block{display:block}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-end{align-items:flex-end}.lg\:px-10{padding-left:2.5rem;padding-right:2.5rem}}
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --cream: #F6F3E9;
+    --cream-soft: #FBF9F1;
+    --charcoal: #17170F;
+    --charcoal-soft: #5B5A50;
+    --accent: #D8F24B;
+    --accent-dark: #8FA82A;
+    --border: #E3DFCF;
+    --font-display: 'Permanent Marker', cursive;
+    --font-sans: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    margin: 0;
+    font-family: var(--font-body);
+  }
+  ::selection { background: var(--accent); color: var(--charcoal); }
+  :focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 3px; }
+  button { font: inherit; cursor: pointer; background: none; border: none; color: inherit; }
+  a { text-decoration: none; color: inherit; }
+
+  .lm-dotgrid {
+    background-image: radial-gradient(#17170F17 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .lm-card {
+    background: var(--cream-soft);
+    border: 1px solid var(--border);
+    border-radius: 1.5rem;
+    transition: transform .4s cubic-bezier(.16,1,.3,1), box-shadow .4s ease, border-color .4s ease;
+  }
+  .lm-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--charcoal);
+    box-shadow: 0 24px 44px -18px rgba(23,23,18,0.22);
+  }
+  .lm-card:hover .lm-card-arrow { color: var(--accent-dark); }
+
+
+  .lm-nav-link { position: relative; }
+  .lm-nav-link::after {
+    content: ''; position: absolute; left: 0; bottom: -5px; width: 0; height: 2px;
+    background: var(--accent-dark); transition: width .3s ease;
+  }
+  .lm-nav-link:hover::after { width: 100%; }
+
+  .lm-strike { position: relative; display: inline-block; }
+  .lm-strike::after {
+    content: ''; position: absolute; left: -3%; right: -3%; top: 52%; height: 5px;
+    background: var(--accent-dark); transform: translateY(-50%) rotate(-2deg); border-radius: 4px;
+  }
+
+  .lm-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;
+    font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.18em;
+    color: var(--charcoal-soft); text-transform: uppercase;
+  }
+  .lm-eyebrow::before {
+    content: ''; width: 6px; height: 6px; border-radius: 999px; background-color: var(--accent-dark); display: inline-block;
+  }
+
+  .lm-spin { animation: lm-spin 0.8s linear infinite; }
+  @keyframes lm-spin { to { transform: rotate(360deg); } }
+
+  .lm-marquee-track {
+    display: inline-flex; white-space: nowrap; padding: 1rem 0;
+    animation: lm-marquee 24s linear infinite;
+    will-change: transform;
+  }
+  @keyframes lm-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  .lm-bounce { animation: lm-bounce 1.6s infinite; display: inline-block; }
+  @keyframes lm-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+
+  /* scroll reveal */
+  .lm-reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+  .lm-reveal.lm-visible { opacity: 1; transform: translateY(0); }
+
+  /* magnetic buttons */
+  .lm-magnetic { transition: transform .25s cubic-bezier(.16,1,.3,1); display: inline-flex; }
+
+  select {
+    appearance: none; -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2317170F' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 1rem center; background-size: 16px; padding-right: 2.5rem;
+  }
+
+  .lm-hero-shape {
+    position: absolute; top: 14%; right: 6%; width: 220px; height: 220px; border-radius: 40px;
+    background-color: var(--accent); opacity: 0.55; z-index: 0; will-change: transform;
+  }
+
+  #mobile-menu { transition: opacity .25s ease; }
+  #mobile-menu.lm-closed { opacity: 0; pointer-events: none; }
+  #mobile-menu .lm-mobile-link { opacity: 0; transform: translateY(18px); transition: opacity .4s ease, transform .4s ease; }
+  #mobile-menu.lm-open .lm-mobile-link { opacity: 1; transform: translateY(0); }
+
+  #back-to-top { opacity: 0; transform: scale(0.7); pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
+  #back-to-top.lm-shown { opacity: 1; transform: scale(1); pointer-events: auto; }
+
+  #contact-success { display: none; }
+  #contact-success.lm-shown { display: flex; }
+  #contact-form.lm-hidden-form { display: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+    .lm-reveal { opacity: 1 !important; transform: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header id="site-nav" class="fixed top-0 left-0 right-0 z-50" style="background-color: rgba(246,243,233,0); border-bottom: 1px solid transparent; transition: background-color .35s ease, border-color .35s ease;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between py-5">
+    <button data-scroll-to="hero" class="flex items-center gap-2" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; color: var(--charcoal);" aria-label="LazyMarketer — back to top">
+      <span style="color: var(--accent-dark);">Lazy</span>Marketer
+    </button>
+
+    <div class="hidden sm:inline-flex items-center px-3 py-1 rounded-full" style="border: 1px solid rgba(23,23,15,0.2); font-family: var(--font-sans); font-size: 0.7rem; letter-spacing: 0.12em; color: var(--charcoal-soft);">
+      AGENCY
+    </div>
+
+    <nav class="hidden md:flex items-center gap-8">
+      <button class="lm-nav-link" data-scroll-to="services" style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">Services</button>
+      <button class="lm-nav-link" data-scroll-to="process" style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">Process</button>
+      <button class="lm-nav-link" data-scroll-to="about" style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">About</button>
+      <button class="lm-nav-link" data-scroll-to="contact" style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">Contact</button>
+    </nav>
+
+    <button data-scroll-to="contact" class="lm-magnetic hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-size: 0.875rem; font-weight: 600;">
+      Start a Project <i data-lucide="arrow-right" size="15"></i>
+    </button>
+
+    <button class="md:hidden p-2" id="open-menu-btn" aria-label="Open menu" style="color: var(--charcoal);">
+      <i data-lucide="menu" size="26"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div id="mobile-menu" class="lm-closed fixed inset-0 md:hidden flex flex-col" style="background-color: var(--cream); z-index: 100;">
+  <div class="flex items-center justify-between px-6 py-5" style="border-bottom: 1px solid var(--border);">
+    <span style="font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; color: var(--charcoal);">
+      <span style="color: var(--accent-dark);">Lazy</span>Marketer
+    </span>
+    <button id="close-menu-btn" aria-label="Close menu" style="color: var(--charcoal);">
+      <i data-lucide="x" size="26"></i>
+    </button>
+  </div>
+
+  <div class="flex-1 flex flex-col justify-center gap-2 px-8">
+    <button class="lm-mobile-link mobile-nav-link text-left py-3" data-scroll-to="services" data-delay="0" style="font-family: var(--font-display); font-size: 2.4rem; color: var(--charcoal);">Services</button>
+    <button class="lm-mobile-link mobile-nav-link text-left py-3" data-scroll-to="process" data-delay="1" style="font-family: var(--font-display); font-size: 2.4rem; color: var(--charcoal);">Process</button>
+    <button class="lm-mobile-link mobile-nav-link text-left py-3" data-scroll-to="about" data-delay="2" style="font-family: var(--font-display); font-size: 2.4rem; color: var(--charcoal);">About</button>
+    <button class="lm-mobile-link mobile-nav-link text-left py-3" data-scroll-to="contact" data-delay="3" style="font-family: var(--font-display); font-size: 2.4rem; color: var(--charcoal);">Contact</button>
+  </div>
+
+  <div class="px-8 pb-10">
+    <button data-scroll-to="contact" class="lm-magnetic w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600;">
+      Start a Project <i data-lucide="arrow-right" size="16"></i>
+    </button>
+  </div>
+</div>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="relative overflow-hidden" style="scroll-margin-top: 90px;">
+    <div class="lm-hero-shape hidden lg:block" id="hero-shape" aria-hidden="true"></div>
+    <div class="absolute inset-0 lm-dotgrid pointer-events-none" aria-hidden="true"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 pt-40 pb-16 md:pt-48 md:pb-20">
+      <div class="lm-reveal">
+        <div class="lm-eyebrow">Creative marketing studio</div>
+      </div>
+
+      <div class="lm-reveal" style="transition-delay: .05s;">
+        <h1 style="font-family: var(--font-display); color: var(--charcoal); font-size: clamp(2.6rem, 7.2vw, 6rem); line-height: 1.05; max-width: 16ch;">
+          Your business deserves better marketing.
+        </h1>
+      </div>
+
+      <div class="lm-reveal" style="transition-delay: .15s;">
+        <p style="font-family: var(--font-sans); color: var(--charcoal); font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 500; margin-top: 1rem;">
+          We make it happen.
+        </p>
+      </div>
+
+      <div class="lm-reveal" style="transition-delay: .25s;">
+        <p class="max-w-md mt-6" style="font-family: var(--font-body); color: var(--charcoal-soft); font-size: 1.05rem; line-height: 1.6;">
+          LazyMarketer is a creative studio for businesses who'd rather grow with good ideas than louder ads.
+        </p>
+      </div>
+
+      <div class="lm-reveal" style="transition-delay: .35s;">
+        <div class="flex flex-wrap items-center gap-6 mt-10">
+          <button data-scroll-to="contact" class="lm-magnetic items-center gap-2 px-7 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600; font-size: 1rem;">
+            Start a Project <i data-lucide="arrow-right" size="17"></i>
+          </button>
+
+          <button data-scroll-to="services" class="inline-flex items-center gap-2" style="font-family: var(--font-sans); font-weight: 600; font-size: 1rem; color: var(--charcoal); border-bottom: 1px solid var(--charcoal);">
+            See What We Do
+            <span class="lm-bounce">↓</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="overflow-hidden" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="lm-marquee-track" id="marquee-track"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="max-w-7xl mx-auto px-6 lg:px-10 py-28 md:py-36" style="scroll-margin-top: 90px;">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-14 gap-4">
+      <div>
+        <div class="lm-reveal"><div class="lm-eyebrow">What we do</div></div>
+        <div class="lm-reveal" style="transition-delay: .05s;">
+          <h2 style="font-family: var(--font-sans); font-weight: 700; color: var(--charcoal); font-size: clamp(2rem, 4vw, 3rem); max-width: 18ch;">
+            Five ways we grow your business.
+          </h2>
+        </div>
+      </div>
+      <div class="lm-reveal" style="transition-delay: .1s;">
+        <p class="max-w-sm" style="font-family: var(--font-body); color: var(--charcoal-soft); line-height: 1.6;">
+          Pick one, or let us build the whole engine — strategy, creative and execution, working together instead of in silos.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="lm-reveal lm-card p-8 flex flex-col h-full" style="transition-delay: 0s;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background-color: var(--accent);">
+          <i data-lucide="share-2" size="22" color="#17170F" stroke-width="1.75"></i>
+        </div>
+        <h3 class="mb-3" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.15rem; color: var(--charcoal);">Social Media Management</h3>
+        <p class="flex-1" style="font-family: var(--font-body); font-size: 0.95rem; color: var(--charcoal-soft); line-height: 1.6;">Content, community and consistency that turn passive followers into paying customers.</p>
+        <div class="mt-6 flex items-center gap-1 lm-card-arrow" style="color: var(--charcoal);">
+          <span style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600;">Learn more</span>
+          <i data-lucide="arrow-up-right" size="15"></i>
+        </div>
+      </div>
+
+      <div class="lm-reveal lm-card p-8 flex flex-col h-full" style="transition-delay: .06s;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background-color: var(--accent);">
+          <i data-lucide="trending-up" size="22" color="#17170F" stroke-width="1.75"></i>
+        </div>
+        <h3 class="mb-3" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.15rem; color: var(--charcoal);">Digital Marketing</h3>
+        <p class="flex-1" style="font-family: var(--font-body); font-size: 0.95rem; color: var(--charcoal-soft); line-height: 1.6;">Performance campaigns across search, social and email — built to convert, not just impress.</p>
+        <div class="mt-6 flex items-center gap-1 lm-card-arrow" style="color: var(--charcoal);">
+          <span style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600;">Learn more</span>
+          <i data-lucide="arrow-up-right" size="15"></i>
+        </div>
+      </div>
+
+      <div class="lm-reveal lm-card p-8 flex flex-col h-full" style="transition-delay: .12s;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background-color: var(--accent);">
+          <i data-lucide="clapperboard" size="22" color="#17170F" stroke-width="1.75"></i>
+        </div>
+        <h3 class="mb-3" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.15rem; color: var(--charcoal);">Video Shoot & Production</h3>
+        <p class="flex-1" style="font-family: var(--font-body); font-size: 0.95rem; color: var(--charcoal-soft); line-height: 1.6;">Concept, shoot and edit — scroll-stopping video made for how people actually watch.</p>
+        <div class="mt-6 flex items-center gap-1 lm-card-arrow" style="color: var(--charcoal);">
+          <span style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600;">Learn more</span>
+          <i data-lucide="arrow-up-right" size="15"></i>
+        </div>
+      </div>
+
+      <div class="lm-reveal lm-card p-8 flex flex-col h-full" style="transition-delay: .18s;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background-color: var(--accent);">
+          <i data-lucide="globe" size="22" color="#17170F" stroke-width="1.75"></i>
+        </div>
+        <h3 class="mb-3" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.15rem; color: var(--charcoal);">Website Development</h3>
+        <p class="flex-1" style="font-family: var(--font-body); font-size: 0.95rem; color: var(--charcoal-soft); line-height: 1.6;">Fast, modern websites that load quick, look sharp and turn visitors into leads.</p>
+        <div class="mt-6 flex items-center gap-1 lm-card-arrow" style="color: var(--charcoal);">
+          <span style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600;">Learn more</span>
+          <i data-lucide="arrow-up-right" size="15"></i>
+        </div>
+      </div>
+
+      <div class="lm-reveal lg:col-span-4" style="transition-delay: .24s;">
+        <div class="rounded-3xl p-9 md:p-10 flex flex-col md:flex-row md:items-center gap-8 justify-between" style="background-color: var(--charcoal);">
+          <div class="flex items-start gap-5">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center shrink-0" style="background-color: var(--accent);">
+              <i data-lucide="rocket" size="26" color="#17170F" stroke-width="1.75"></i>
+            </div>
+            <div class="max-w-lg">
+              <h3 class="mb-2" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.3rem; color: var(--cream);">Business Development & Growth Ideas</h3>
+              <p style="font-family: var(--font-body); font-size: 0.95rem; color: #CFCDC1; line-height: 1.6;">Strategic thinking for businesses ready to scale — positioning, partnerships and growth plans built around real numbers, not vanity metrics.</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 md:flex-col md:items-end shrink-0">
+            <span class="px-3 py-1.5 rounded-full" style="border: 1px solid rgba(246,243,233,0.25); color: var(--cream); font-family: var(--font-sans); font-size: 0.75rem;">Positioning</span>
+            <span class="px-3 py-1.5 rounded-full" style="border: 1px solid rgba(246,243,233,0.25); color: var(--cream); font-family: var(--font-sans); font-size: 0.75rem;">Growth roadmaps</span>
+            <span class="px-3 py-1.5 rounded-full" style="border: 1px solid rgba(246,243,233,0.25); color: var(--cream); font-family: var(--font-sans); font-size: 0.75rem;">Revenue strategy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="py-28 md:py-36" style="background-color: var(--cream-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); scroll-margin-top: 90px;">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="lm-reveal">
+        <div style="font-family: var(--font-display); font-size: 3rem; color: var(--accent-dark); line-height: 0.6; margin-bottom: 1.5rem;">"</div>
+        <p style="font-family: var(--font-sans); font-weight: 600; color: var(--charcoal); font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.35; max-width: 16ch;">
+          We don't believe marketing needs more noise. It needs better ideas.
+        </p>
+      </div>
+
+      <div class="lm-reveal" style="transition-delay: .12s;">
+        <div class="lm-eyebrow">About the studio</div>
+        <h2 class="mb-5" style="font-family: var(--font-sans); font-weight: 700; color: var(--charcoal); font-size: clamp(1.7rem, 3vw, 2.25rem);">Not your average agency.</h2>
+        <p style="font-family: var(--font-body); color: var(--charcoal-soft); font-size: 1.02rem; line-height: 1.7;" class="mb-4">
+          LazyMarketer was built on a simple idea: most businesses don't need more marketing, they need marketing that actually thinks. We plan before we post, question before we execute, and design every campaign to earn its place — not just fill a calendar.
+        </p>
+        <p style="font-family: var(--font-body); color: var(--charcoal-soft); font-size: 1.02rem; line-height: 1.7;" class="mb-8">
+          Part strategists, part creatives, part builders — we sit close enough to your business to understand it, and far enough to see what you can't.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2 rounded-full" style="border: 1px solid var(--charcoal); font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--charcoal);">Strategy first</span>
+          <span class="px-4 py-2 rounded-full" style="border: 1px solid var(--charcoal); font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--charcoal);">Creativity always</span>
+          <span class="px-4 py-2 rounded-full" style="border: 1px solid var(--charcoal); font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--charcoal);">No fluff</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section id="process" class="py-28 md:py-36" style="background-color: var(--cream-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); scroll-margin-top: 90px;">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="mb-16 max-w-xl">
+        <div class="lm-reveal"><div class="lm-eyebrow">How we work</div></div>
+        <div class="lm-reveal" style="transition-delay: .05s;">
+          <h2 style="font-family: var(--font-sans); font-weight: 700; color: var(--charcoal); font-size: clamp(2rem, 4vw, 3rem);">From idea to impact in four steps.</h2>
+        </div>
+      </div>
+
+      <div class="relative grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="hidden md:block absolute left-0 right-0 h-px" style="top: 24px; background-color: var(--border); z-index: 0;"></div>
+
+        <div class="lm-reveal relative z-10" style="transition-delay: 0s;">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-6" style="background-color: var(--cream-soft); border: 2px solid var(--charcoal); font-family: var(--font-sans); font-weight: 700; font-size: 0.85rem; color: var(--charcoal);">01</div>
+          <h3 class="mb-3" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.2rem; color: var(--charcoal);">Discover</h3>
+          <p style="font-family: var(--font-body); font-size: 0.92rem; color: var(--charcoal-soft); line-height: 1.6;">We dig into your business, audience and competitors before touching a single strategy deck.</p>
+        </div>
+
+        <div class="lm-reveal relative z-10" style="transition-delay: .1s;">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-6" style="background-color: var(--cream-soft); border: 2px solid var(--charcoal); font-family: var(--font-sans); font-weight: 700; font-size: 0.85rem; color: var(--charcoal);">02</div>
+          <h3 class="mb-3" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.2rem; color: var(--charcoal);">Strategize</h3>
+          <p style="font-family: var(--font-body); font-size: 0.92rem; color: var(--charcoal-soft); line-height: 1.6;">Clear positioning and a growth plan built around what actually moves your numbers.</p>
+        </div>
+
+        <div class="lm-reveal relative z-10" style="transition-delay: .2s;">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-6" style="background-color: var(--cream-soft); border: 2px solid var(--charcoal); font-family: var(--font-sans); font-weight: 700; font-size: 0.85rem; color: var(--charcoal);">03</div>
+          <h3 class="mb-3" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.2rem; color: var(--charcoal);">Create</h3>
+          <p style="font-family: var(--font-body); font-size: 0.92rem; color: var(--charcoal-soft); line-height: 1.6;">Design, content and campaigns that look sharp and sound like you — not everyone else.</p>
+        </div>
+
+        <div class="lm-reveal relative z-10" style="transition-delay: .3s;">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-6" style="background-color: var(--cream-soft); border: 2px solid var(--charcoal); font-family: var(--font-sans); font-weight: 700; font-size: 0.85rem; color: var(--charcoal);">04</div>
+          <h3 class="mb-3" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.2rem; color: var(--charcoal);">Grow</h3>
+          <p style="font-family: var(--font-body); font-size: 0.92rem; color: var(--charcoal-soft); line-height: 1.6;">We ship, measure and refine — real results, tracked and reported, month after month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY ===================== -->
+  <section id="why" class="max-w-7xl mx-auto px-6 lg:px-10 py-28 md:py-36" style="scroll-margin-top: 90px;">
+    <div class="lm-reveal text-center mb-6">
+      <div class="lm-eyebrow" style="justify-content: center;">Why lazymarketer</div>
+    </div>
+
+    <div class="lm-reveal text-center mb-6" style="transition-delay: .06s;">
+      <h2 style="font-family: var(--font-display); color: var(--charcoal); font-size: clamp(2.4rem, 7vw, 5rem); line-height: 1.1;">
+        LAZY <span style="color: var(--accent-dark); font-family: var(--font-sans); font-weight: 700;">&ne;</span> <span class="lm-strike">CARELESS</span>
+      </h2>
+    </div>
+
+    <div class="lm-reveal text-center mb-16" style="transition-delay: .12s;">
+      <p style="font-family: var(--font-body); color: var(--charcoal-soft); font-size: 1.1rem;">Smart ideas, strong strategy and practical execution.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+      <div class="lm-reveal" style="transition-delay: .15s;">
+        <p class="mb-5" style="font-family: var(--font-sans); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; color: var(--charcoal-soft);">WHAT "LAZY" SOUNDS LIKE</p>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3"><i data-lucide="x" size="16" color="#5B5A50"></i><span class="lm-strike" style="font-family: var(--font-body); color: var(--charcoal-soft); font-size: 1rem;">No effort</span></li>
+          <li class="flex items-center gap-3"><i data-lucide="x" size="16" color="#5B5A50"></i><span class="lm-strike" style="font-family: var(--font-body); color: var(--charcoal-soft); font-size: 1rem;">Doing the bare minimum</span></li>
+          <li class="flex items-center gap-3"><i data-lucide="x" size="16" color="#5B5A50"></i><span class="lm-strike" style="font-family: var(--font-body); color: var(--charcoal-soft); font-size: 1rem;">Missed deadlines</span></li>
+          <li class="flex items-center gap-3"><i data-lucide="x" size="16" color="#5B5A50"></i><span class="lm-strike" style="font-family: var(--font-body); color: var(--charcoal-soft); font-size: 1rem;">Generic, copy-paste templates</span></li>
+        </ul>
+      </div>
+
+      <div class="lm-reveal" style="transition-delay: .22s;">
+        <p class="mb-5" style="font-family: var(--font-sans); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; color: var(--accent-dark);">WHAT IT ACTUALLY MEANS</p>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style="background-color: var(--accent);"><i data-lucide="check" size="13" color="#17170F" stroke-width="3"></i></span><span style="font-family: var(--font-body); color: var(--charcoal); font-weight: 500; font-size: 1rem;">Zero wasted effort</span></li>
+          <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style="background-color: var(--accent);"><i data-lucide="check" size="13" color="#17170F" stroke-width="3"></i></span><span style="font-family: var(--font-body); color: var(--charcoal); font-weight: 500; font-size: 1rem;">Only what moves the needle</span></li>
+          <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style="background-color: var(--accent);"><i data-lucide="check" size="13" color="#17170F" stroke-width="3"></i></span><span style="font-family: var(--font-body); color: var(--charcoal); font-weight: 500; font-size: 1rem;">Deadlines that actually stick</span></li>
+          <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style="background-color: var(--accent);"><i data-lucide="check" size="13" color="#17170F" stroke-width="3"></i></span><span style="font-family: var(--font-body); color: var(--charcoal); font-weight: 500; font-size: 1rem;">Ideas built around your business</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BANNER ===================== -->
+  <section id="cta" class="py-24" style="background-color: var(--accent); scroll-margin-top: 90px;">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="lm-reveal">
+        <h2 style="font-family: var(--font-sans); font-weight: 700; color: var(--charcoal); font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.15;">
+          Got a business? Let's make it impossible to ignore.
+        </h2>
+      </div>
+      <div class="lm-reveal" style="transition-delay: .1s;">
+        <div class="mt-9 flex justify-center">
+          <button data-scroll-to="contact" class="lm-magnetic items-center gap-2 px-8 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600; font-size: 1rem;">
+            Start a Conversation <i data-lucide="arrow-right" size="17"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 lg:px-10 py-28 md:py-36" style="scroll-margin-top: 90px;">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-14">
+      <div class="lg:col-span-3">
+        <div class="lm-reveal">
+          <div class="lm-eyebrow">Let's talk</div>
+          <h2 class="mb-4" style="font-family: var(--font-sans); font-weight: 700; color: var(--charcoal); font-size: clamp(2rem, 4vw, 2.75rem);">Tell us about your business.</h2>
+          <p class="mb-10 max-w-md" style="font-family: var(--font-body); color: var(--charcoal-soft); line-height: 1.6;">A few details now saves a lot of back-and-forth later. We reply within one business day.</p>
+        </div>
+
+        <div id="contact-success" class="lm-card p-10 flex-col items-start gap-4">
+          <span class="w-12 h-12 rounded-full flex items-center justify-center" style="background-color: var(--accent);">
+            <i data-lucide="check" size="22" color="#17170F" stroke-width="2.5"></i>
+          </span>
+          <h3 style="font-family: var(--font-sans); font-weight: 700; font-size: 1.3rem; color: var(--charcoal);">Message sent.</h3>
+          <p style="font-family: var(--font-body); color: var(--charcoal-soft); line-height: 1.6;">
+            Thanks, <span id="success-name">there</span> — we'll be in touch shortly.
+          </p>
+          <button id="send-another-btn" style="font-family: var(--font-sans); font-weight: 600; font-size: 0.9rem; color: var(--charcoal); border-bottom: 1px solid var(--charcoal);">Send another message</button>
+        </div>
+
+        <form id="contact-form" class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; color: var(--charcoal); margin-bottom: 0.4rem; display: block;" for="name">Name</label>
+            <input id="name" name="name" required style="font-family: var(--font-body); font-size: 0.95rem; width: 100%; padding: 0.85rem 1rem; border-radius: 0.9rem; border: 1px solid var(--border); background-color: var(--cream-soft); color: var(--charcoal); outline: none;" placeholder="Jane Doe" />
+          </div>
+          <div>
+            <label style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; color: var(--charcoal); margin-bottom: 0.4rem; display: block;" for="business">Business</label>
+            <input id="business" name="business" required style="font-family: var(--font-body); font-size: 0.95rem; width: 100%; padding: 0.85rem 1rem; border-radius: 0.9rem; border: 1px solid var(--border); background-color: var(--cream-soft); color: var(--charcoal); outline: none;" placeholder="Acme Co." />
+          </div>
+          <div class="sm:col-span-2">
+            <label style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; color: var(--charcoal); margin-bottom: 0.4rem; display: block;" for="email">Email</label>
+            <input id="email" name="email" type="email" required style="font-family: var(--font-body); font-size: 0.95rem; width: 100%; padding: 0.85rem 1rem; border-radius: 0.9rem; border: 1px solid var(--border); background-color: var(--cream-soft); color: var(--charcoal); outline: none;" placeholder="jane@acme.com" />
+          </div>
+          <div>
+            <label style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; color: var(--charcoal); margin-bottom: 0.4rem; display: block;" for="service">Service</label>
+            <select id="service" name="service" required style="font-family: var(--font-body); font-size: 0.95rem; width: 100%; padding: 0.85rem 1rem; border-radius: 0.9rem; border: 1px solid var(--border); background-color: var(--cream-soft); color: var(--charcoal); outline: none;">
+              <option value="">Select a service</option>
+              <option>Social Media Management</option>
+              <option>Digital Marketing</option>
+              <option>Video Shoot & Production</option>
+              <option>Website Development</option>
+              <option>Business Development & Growth</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; color: var(--charcoal); margin-bottom: 0.4rem; display: block;" for="budget">Budget</label>
+            <select id="budget" name="budget" required style="font-family: var(--font-body); font-size: 0.95rem; width: 100%; padding: 0.85rem 1rem; border-radius: 0.9rem; border: 1px solid var(--border); background-color: var(--cream-soft); color: var(--charcoal); outline: none;">
+              <option value="">Select a range</option>
+              <option>Under $2k / mo</option>
+              <option>$2k – 5k / mo</option>
+              <option>$5k – 10k / mo</option>
+              <option>$10k+ / mo</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <label style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; color: var(--charcoal); margin-bottom: 0.4rem; display: block;" for="message">Message</label>
+            <textarea id="message" name="message" required rows="4" style="font-family: var(--font-body); font-size: 0.95rem; width: 100%; padding: 0.85rem 1rem; border-radius: 0.9rem; border: 1px solid var(--border); background-color: var(--cream-soft); color: var(--charcoal); outline: none;" placeholder="What are you looking to achieve?"></textarea>
+          </div>
+          <div class="sm:col-span-2 mt-2">
+            <button type="submit" id="submit-btn" class="lm-magnetic items-center justify-center gap-2 px-7 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600; font-size: 0.95rem;">
+              <span id="submit-btn-content" class="inline-flex items-center gap-2">Send Message <i data-lucide="arrow-right" size="16"></i></span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="lg:col-span-2">
+        <div class="lm-reveal lm-card p-9 h-full flex flex-col justify-between" style="transition-delay: .1s;">
+          <div>
+            <h3 class="mb-5" style="font-family: var(--font-sans); font-weight: 700; font-size: 1.1rem; color: var(--charcoal);">Prefer email?</h3>
+            <a href="mailto:hello@lazymarketer.com" class="inline-flex items-center gap-2 mb-8" style="font-family: var(--font-sans); font-weight: 600; color: var(--charcoal); border-bottom: 1px solid var(--charcoal);">
+              <i data-lucide="mail" size="16"></i> hello@lazymarketer.com
+            </a>
+
+            <p class="mb-2" style="font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.08em; color: var(--charcoal-soft);">AVAILABILITY</p>
+            <p class="mb-8" style="font-family: var(--font-body); color: var(--charcoal);">Currently booking for Q1 2026.</p>
+
+            <p class="mb-3" style="font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.08em; color: var(--charcoal-soft);">FOLLOW ALONG</p>
+            <div class="flex gap-3">
+              <a href="#" onclick="event.preventDefault()" aria-label="Social link" class="w-10 h-10 rounded-full flex items-center justify-center" style="border: 1px solid var(--border); color: var(--charcoal);"><i data-lucide="instagram" size="17"></i></a>
+              <a href="#" onclick="event.preventDefault()" aria-label="Social link" class="w-10 h-10 rounded-full flex items-center justify-center" style="border: 1px solid var(--border); color: var(--charcoal);"><i data-lucide="linkedin" size="17"></i></a>
+              <a href="#" onclick="event.preventDefault()" aria-label="Social link" class="w-10 h-10 rounded-full flex items-center justify-center" style="border: 1px solid var(--border); color: var(--charcoal);"><i data-lucide="twitter" size="17"></i></a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 mt-10">
+            <span class="w-7 h-7 rounded-md" style="background-color: var(--charcoal); border: 1px solid var(--border);"></span>
+            <span class="w-7 h-7 rounded-md" style="background-color: var(--cream); border: 1px solid var(--border);"></span>
+            <span class="w-7 h-7 rounded-md" style="background-color: var(--accent); border: 1px solid var(--border);"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer style="background-color: var(--charcoal); color: var(--cream);">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-20 pb-10">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-10 mb-16">
+      <div>
+        <h2 style="font-family: var(--font-sans); font-weight: 700; font-size: clamp(2.2rem, 6vw, 4rem);">
+          <span style="color: var(--accent);">Lazy</span>Marketer
+        </h2>
+        <p class="mt-3 max-w-sm" style="font-family: var(--font-body); color: #B9B7AC;">Smart marketing for businesses that want to move.</p>
+      </div>
+      <button data-scroll-to="contact" class="lm-magnetic items-center gap-2 px-7 py-4 rounded-full self-start" style="background-color: var(--accent); color: var(--charcoal); font-family: var(--font-sans); font-weight: 600;">
+        Start a Conversation <i data-lucide="arrow-right" size="16"></i>
+      </button>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-16" style="font-family: var(--font-sans);">
+      <div>
+        <p class="mb-4" style="font-size: 0.75rem; letter-spacing: 0.1em; color: #8A8878;">MENU</p>
+        <div class="flex flex-col gap-2">
+          <button data-scroll-to="services" class="text-left" style="font-size: 0.9rem; color: #D9D7CB;">Services</button>
+          <button data-scroll-to="process" class="text-left" style="font-size: 0.9rem; color: #D9D7CB;">Process</button>
+          <button data-scroll-to="about" class="text-left" style="font-size: 0.9rem; color: #D9D7CB;">About</button>
+          <button data-scroll-to="contact" class="text-left" style="font-size: 0.9rem; color: #D9D7CB;">Contact</button>
+        </div>
+      </div>
+      <div>
+        <p class="mb-4" style="font-size: 0.75rem; letter-spacing: 0.1em; color: #8A8878;">SERVICES</p>
+        <div class="flex flex-col gap-2">
+          <span style="font-size: 0.9rem; color: #D9D7CB;">Social Media</span>
+          <span style="font-size: 0.9rem; color: #D9D7CB;">Digital Marketing</span>
+          <span style="font-size: 0.9rem; color: #D9D7CB;">Video Production</span>
+          <span style="font-size: 0.9rem; color: #D9D7CB;">Web Development</span>
+        </div>
+      </div>
+      <div>
+        <p class="mb-4" style="font-size: 0.75rem; letter-spacing: 0.1em; color: #8A8878;">CONTACT</p>
+        <div class="flex flex-col gap-2">
+          <a href="mailto:hello@lazymarketer.com" style="font-size: 0.9rem; color: #D9D7CB;">hello@lazymarketer.com</a>
+          <span style="font-size: 0.9rem; color: #D9D7CB;">Remote-first studio</span>
+        </div>
+      </div>
+      <div>
+        <p class="mb-4" style="font-size: 0.75rem; letter-spacing: 0.1em; color: #8A8878;">SOCIAL</p>
+        <div class="flex gap-3">
+          <a href="#" onclick="event.preventDefault()" aria-label="Social link" class="w-9 h-9 rounded-full flex items-center justify-center" style="border: 1px solid rgba(246,243,233,0.2);"><i data-lucide="instagram" size="15"></i></a>
+          <a href="#" onclick="event.preventDefault()" aria-label="Social link" class="w-9 h-9 rounded-full flex items-center justify-center" style="border: 1px solid rgba(246,243,233,0.2);"><i data-lucide="linkedin" size="15"></i></a>
+          <a href="#" onclick="event.preventDefault()" aria-label="Social link" class="w-9 h-9 rounded-full flex items-center justify-center" style="border: 1px solid rgba(246,243,233,0.2);"><i data-lucide="twitter" size="15"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8" style="border-top: 1px solid rgba(246,243,233,0.12);">
+      <div class="flex items-center gap-3">
+        <div class="flex gap-1.5">
+          <span class="w-4 h-4 rounded" style="background-color: var(--cream);"></span>
+          <span class="w-4 h-4 rounded" style="background-color: var(--accent);"></span>
+          <span class="w-4 h-4 rounded" style="background-color: #3A392E;"></span>
+        </div>
+        <span style="font-family: var(--font-body); font-size: 0.8rem; color: #8A8878;">© 2026 LazyMarketer. All rights reserved.</span>
+      </div>
+      <span style="font-family: var(--font-body); font-size: 0.8rem; color: #8A8878;">Built with strategy, not templates.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== BACK TO TOP ===================== -->
+<button id="back-to-top" data-scroll-to="hero" aria-label="Back to top" class="lm-magnetic fixed bottom-8 right-8 w-12 h-12 rounded-full flex items-center justify-center" style="background-color: var(--charcoal); color: var(--cream); box-shadow: 0 10px 30px rgba(23,23,18,0.25); z-index: 60;">
+  <i data-lucide="arrow-up" size="18"></i>
+</button>
+
+<script>
+(function () {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- inline icon set (no external dependency) ---------- */
+  const ICONS = {
+    'menu': '<line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>',
+    'x': '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+    'arrow-right': '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+    'arrow-up-right': '<path d="M7 7h10v10"/><path d="M7 17 17 7"/>',
+    'arrow-up': '<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>',
+    'share-2': '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/>',
+    'trending-up': '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',
+    'clapperboard': '<path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/>',
+    'globe': '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
+    'rocket': '<path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>',
+    'check': '<path d="M20 6 9 17l-5-5"/>',
+    'instagram': '<rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>',
+    'linkedin': '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>',
+    'twitter': '<path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>',
+    'mail': '<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>',
+    'loader-2': '<path d="M21 12a9 9 0 1 1-6.219-8.56"/>',
+  };
+
+  function renderIcon(el) {
+    const name = el.getAttribute('data-lucide');
+    const inner = ICONS[name];
+    if (!inner) return;
+    const size = el.getAttribute('size') || 24;
+    const color = el.getAttribute('color') || 'currentColor';
+    const strokeWidth = el.getAttribute('stroke-width') || 2;
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('width', size);
+    svg.setAttribute('height', size);
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('stroke', color);
+    svg.setAttribute('stroke-width', strokeWidth);
+    svg.setAttribute('stroke-linecap', 'round');
+    svg.setAttribute('stroke-linejoin', 'round');
+    svg.innerHTML = inner;
+    if (el.className) svg.setAttribute('class', el.className);
+    svg.style.display = 'inline-block';
+    svg.style.flexShrink = '0';
+    el.replaceWith(svg);
+  }
+
+  function renderIcons(root) {
+    (root || document).querySelectorAll('[data-lucide]').forEach(renderIcon);
+  }
+
+  /* ---------- data ---------- */
+  const MARQUEE_ITEMS = ["SOCIAL MEDIA", "DIGITAL MARKETING", "VIDEO PRODUCTION", "WEBSITE DEVELOPMENT", "GROWTH STRATEGY"];
+
+  /* ---------- marquee ---------- */
+  const marqueeTrack = document.getElementById('marquee-track');
+  const doubled = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
+  marqueeTrack.innerHTML = doubled.map(item => `
+    <span class="inline-flex items-center" style="font-family: var(--font-sans); font-weight: 600; font-size: 0.95rem; letter-spacing: 0.06em; color: var(--charcoal);">
+      ${item}<span style="color: var(--accent-dark); margin: 0 1.75rem; font-size: 0.6rem;">&#9679;</span>
+    </span>
+  `).join('');
+
+  /* ---------- smooth scroll ---------- */
+  function scrollToId(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth', block: 'start' });
+  }
+  document.querySelectorAll('[data-scroll-to]').forEach(el => {
+    el.addEventListener('click', () => scrollToId(el.dataset.scrollTo));
+  });
+
+  /* ---------- nav scroll state ---------- */
+  const nav = document.getElementById('site-nav');
+  function onNavScroll() {
+    const scrolled = window.scrollY > 30;
+    nav.style.backgroundColor = scrolled ? 'rgba(246,243,233,0.88)' : 'rgba(246,243,233,0)';
+    nav.style.backdropFilter = scrolled ? 'blur(12px)' : 'none';
+    nav.style.borderBottomColor = scrolled ? 'var(--border)' : 'transparent';
+  }
+  window.addEventListener('scroll', onNavScroll, { passive: true });
+  onNavScroll();
+
+  /* ---------- mobile menu ---------- */
+  const mobileMenu = document.getElementById('mobile-menu');
+  const openBtn = document.getElementById('open-menu-btn');
+  const closeBtn = document.getElementById('close-menu-btn');
+  function openMenu() {
+    mobileMenu.classList.remove('lm-closed');
+    requestAnimationFrame(() => mobileMenu.classList.add('lm-open'));
+  }
+  function closeMenu() {
+    mobileMenu.classList.remove('lm-open');
+    setTimeout(() => mobileMenu.classList.add('lm-closed'), 250);
+  }
+  openBtn.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.style.transitionDelay = (0.08 * Number(link.dataset.delay)) + 's';
+    link.addEventListener('click', () => {
+      const target = link.dataset.scrollTo;
+      closeMenu();
+      setTimeout(() => scrollToId(target), 200);
+    });
+  });
+
+  /* ---------- hero parallax ---------- */
+  const heroShape = document.getElementById('hero-shape');
+  if (heroShape && !prefersReduced) {
+    function onHeroScroll() {
+      const y = Math.min(window.scrollY, 700);
+      const t = y / 700;
+      const translateY = t * 130;
+      const rotate = -6 + t * 12;
+      heroShape.style.transform = `translateY(${translateY}px) rotate(${rotate}deg)`;
+    }
+    window.addEventListener('scroll', onHeroScroll, { passive: true });
+    onHeroScroll();
+  }
+
+  /* ---------- magnetic buttons ---------- */
+  if (!prefersReduced) {
+    document.querySelectorAll('.lm-magnetic').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = (e.clientX - rect.left - rect.width / 2) * 0.3;
+        const y = (e.clientY - rect.top - rect.height / 2) * 0.3;
+        btn.style.transform = `translate(${x}px, ${y}px)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0, 0)';
+      });
+    });
+  }
+
+  /* ---------- scroll reveal ---------- */
+  const revealEls = document.querySelectorAll('.lm-reveal');
+  if (prefersReduced) {
+    revealEls.forEach(el => el.classList.add('lm-visible'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('lm-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '-80px' });
+    revealEls.forEach(el => io.observe(el));
+  }
+
+  /* ---------- back to top ---------- */
+  const backToTop = document.getElementById('back-to-top');
+  function onBackToTopScroll() {
+    backToTop.classList.toggle('lm-shown', window.scrollY > 900);
+  }
+  window.addEventListener('scroll', onBackToTopScroll, { passive: true });
+  onBackToTopScroll();
+
+  /* ---------- contact form ---------- */
+  const WHATSAPP_NUMBER = '919104491477';
+  const contactForm = document.getElementById('contact-form');
+  const contactSuccess = document.getElementById('contact-success');
+  const submitBtnContent = document.getElementById('submit-btn-content');
+  const successName = document.getElementById('success-name');
+  const sendAnotherBtn = document.getElementById('send-another-btn');
+
+  function buildWhatsAppMessage() {
+    const name = document.getElementById('name').value.trim();
+    const business = document.getElementById('business').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const service = document.getElementById('service').value.trim();
+    const budget = document.getElementById('budget').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    return [
+      'Hi LazyMarketer! I\'d like to get in touch.',
+      '',
+      `*Name:* ${name}`,
+      `*Business:* ${business}`,
+      `*Email:* ${email}`,
+      `*Service:* ${service}`,
+      `*Budget:* ${budget}`,
+      '',
+      `*Message:*`,
+      message,
+    ].join('\n');
+  }
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    submitBtnContent.innerHTML = '<i data-lucide="loader-2" size="16" class="lm-spin"></i> Sending&hellip;';
+    renderIcons(submitBtnContent);
+
+    const waText = encodeURIComponent(buildWhatsAppMessage());
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+    setTimeout(() => {
+      const nameVal = document.getElementById('name').value.trim();
+      successName.textContent = nameVal ? nameVal.split(' ')[0] : 'there';
+      contactForm.classList.add('lm-hidden-form');
+      contactSuccess.classList.add('lm-shown');
+      submitBtnContent.innerHTML = 'Send Message <i data-lucide="arrow-right" size="16"></i>';
+      renderIcons(submitBtnContent);
+    }, 1100);
+  });
+
+  sendAnotherBtn.addEventListener('click', () => {
+    contactForm.reset();
+    contactForm.classList.remove('lm-hidden-form');
+    contactSuccess.classList.remove('lm-shown');
+  });
+
+  /* ---------- init icons ---------- */
+  renderIcons(document);
+})();
+</script>
+</body>
+</html>
