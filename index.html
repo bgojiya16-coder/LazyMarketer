@@ -181,6 +181,17 @@
   #contact-success.lm-shown { display: flex; }
   #contact-form.lm-hidden-form { display: none; }
 
+  /* mobile CTA adjustments */
+  .lm-cta-full { width: 100%; justify-content: center; }
+  @media (min-width: 640px) {
+    .lm-cta-full { width: auto; }
+  }
+
+  .lm-hero-cta-row { flex-direction: column; align-items: center; }
+  @media (min-width: 640px) {
+    .lm-hero-cta-row { flex-direction: row; flex-wrap: wrap; align-items: center; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
     .lm-reveal { opacity: 1 !important; transform: none !important; }
@@ -273,8 +284,8 @@
       </div>
 
       <div class="lm-reveal" style="transition-delay: .35s;">
-        <div class="flex flex-wrap items-center gap-6 mt-10">
-          <button data-scroll-to="contact" class="lm-magnetic items-center gap-2 px-7 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600; font-size: 1rem;">
+        <div class="flex lm-hero-cta-row gap-6 mt-10">
+          <button data-scroll-to="contact" class="lm-magnetic lm-cta-full items-center gap-2 px-7 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600; font-size: 1rem;">
             Start a Project <i data-lucide="arrow-right" size="17"></i>
           </button>
 
@@ -509,8 +520,8 @@
         </h2>
       </div>
       <div class="lm-reveal" style="transition-delay: .1s;">
-        <div class="mt-9 flex justify-center">
-          <button data-scroll-to="contact" class="lm-magnetic items-center gap-2 px-8 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600; font-size: 1rem;">
+        <div class="mt-9 flex justify-center px-4">
+          <button data-scroll-to="contact" class="lm-magnetic lm-cta-full items-center gap-2 px-8 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600; font-size: 1rem; max-width: 22rem;">
             Start a Conversation <i data-lucide="arrow-right" size="17"></i>
           </button>
         </div>
@@ -579,7 +590,7 @@
             <textarea id="message" name="message" required rows="4" style="font-family: var(--font-body); font-size: 1rem; width: 100%; padding: 0.85rem 1rem; border-radius: 0.9rem; border: 1px solid var(--border); background-color: var(--cream-soft); color: var(--charcoal); outline: none;" placeholder="What are you looking to achieve?"></textarea>
           </div>
           <div class="sm:col-span-2 mt-2">
-            <button type="submit" id="submit-btn" class="lm-magnetic items-center justify-center gap-2 px-7 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600; font-size: 0.95rem;">
+            <button type="submit" id="submit-btn" class="lm-magnetic lm-cta-full items-center gap-2 px-7 py-4 rounded-full" style="background-color: var(--charcoal); color: var(--cream); font-family: var(--font-sans); font-weight: 600; font-size: 0.95rem;">
               <span id="submit-btn-content" class="inline-flex items-center gap-2">Send Message <i data-lucide="arrow-right" size="16"></i></span>
             </button>
           </div>
@@ -627,7 +638,7 @@
         </h2>
         <p class="mt-3 max-w-sm" style="font-family: var(--font-body); color: #B9B7AC;">Smart marketing for businesses that want to move.</p>
       </div>
-      <button data-scroll-to="contact" class="lm-magnetic items-center gap-2 px-7 py-4 rounded-full self-start" style="background-color: var(--accent); color: var(--charcoal); font-family: var(--font-sans); font-weight: 600;">
+      <button data-scroll-to="contact" class="lm-magnetic lm-cta-full items-center gap-2 px-7 py-4 rounded-full self-start" style="background-color: var(--accent); color: var(--charcoal); font-family: var(--font-sans); font-weight: 600;">
         Start a Conversation <i data-lucide="arrow-right" size="16"></i>
       </button>
     </div>
